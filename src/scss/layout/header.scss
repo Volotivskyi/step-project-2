@@ -1,0 +1,96 @@
+.header__content {
+  display: flex;
+  max-width: 1920px;
+  padding: 40px 70px;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  @media screen and (max-width: 768px) {
+  
+  }
+}
+.header__nav {
+  display: flex;
+  padding-bottom: 30px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+.header__logo {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.header__name {
+  color: #000;
+  text-align: center;
+  font-family: Gilroy;
+  font-size: 35px;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: -0.7px;
+}
+.header__name--uppercase {
+  color: #000;
+  font-family: Gilroy-Medium;
+  font-size: 35px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.7px;
+  text-transform: uppercase;
+}
+.header__menu {
+  color: #252525;
+  text-align: center;
+  font-family: Gilroy-SemiBold;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: normal;
+}
+.header__title--name {
+  color: #252525;
+  text-align: center;
+  font-family: Gilroy-SemiBold;
+  font-size: 150px;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  @media screen and (max-width: 768px) {
+font-size: 120px;
+  }
+}
+.header__title--company {
+  color: #252525;
+  font-family: Gilroy;
+  font-size: 150px;
+  font-weight: 300;
+  line-height: normal;
+  text-transform: capitalize;
+  position: relative;
+  padding-bottom: 65px;
+  @media screen and (max-width: 768px) {
+    font-size: 120px;
+  }
+
+  &::after {
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='42' viewBox='0 0 28 42' fill='none'%3E%3Cpath d='M14 38.3625L14 1' stroke='%23252525' stroke-width='2' stroke-linecap='square' stroke-linejoin='round'/%3E%3Cpath d='M1.5459 28.5458L14.0001 41L26.4542 28.5458' stroke='%23252525' stroke-width='2' stroke-linecap='square' stroke-linejoin='round'/%3E%3C/svg%3E");
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    display: block;
+  }
+}
+.header__title {
+  display: flex;
+}
+
+
+.hero__img {
+  max-width: 100%;
+  height: auto;
+  padding-top: 80px;
+  object-fit: cover;
+  @media screen and (max-width: 768px) {
+
+  } 
+}
