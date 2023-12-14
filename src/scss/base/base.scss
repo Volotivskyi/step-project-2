@@ -1,0 +1,12 @@
+.container {
+  width: 1780px;
+  margin: 0 auto;
+
+  @media screen and (max-width: 2000px) {
+    width: 1200px;
+  }
+}
+.body {
+  background-color: #f5f3ea;
+  font-family: Gilroy-ExtraBold, Gilroy-Light;
+}
