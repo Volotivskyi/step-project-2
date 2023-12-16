@@ -1,0 +1,147 @@
+.my-clients {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.my-clients__title-div {
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.my-clients__main-title {
+  color: #252525;
+  font-family: Gilroy;
+  font-size: 212px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 8.48px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.my-clients__content {
+  //   padding-left: 70px;
+  //   padding-right: 70px;
+  height: 1214px;
+}
+
+.my-clients__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  // column-gap: 38px;
+}
+
+.my-clients__element {
+  padding: 30px;
+  height: 507px;
+  // width: 507px;
+}
+
+.my-clients__element:nth-child(1),
+.my-clients__element:nth-child(2),
+.my-clients__element:nth-child(4),
+.my-clients__element:nth-child(5) {
+  border-right: 1px solid black;
+}
+
+.my-clients__element:nth-child(1),
+.my-clients__element:nth-child(2),
+.my-clients__element:nth-child(3) {
+  border-bottom: 1px solid black;
+}
+
+.my-clients__element-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.my-clients__element-logo-1 {
+  width: 180px;
+  height: 35px;
+}
+
+.my-clients__element-logo-2 {
+  width: 84px;
+  height: 40px;
+}
+
+.my-clients__element-logo-3 {
+  width: 175px;
+  height: 35px;
+}
+
+.my-clients__element-logo-4 {
+  width: 152px;
+  height: 34px;
+}
+
+.my-clients__element-logo-6 {
+  width: 180px;
+  height: 35px;
+}
+
+.my-clients__element-logo-7 {
+  width: 145px;
+  height: 35px;
+}
+
+.my-clients__title {
+  color: #333;
+  font-family: Gilroy;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 44px;
+  width: 500px;
+}
+
+.my-clients__text {
+  color: #000;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.my-clients__person-content {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.my-clients__person-img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50px;
+}
+
+.my-clients__person-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.my-clients__person-name {
+  color: #000;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px; /* 100% */
+}
+
+.my-clients__person-job {
+  color: #000;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 100% */
+}
