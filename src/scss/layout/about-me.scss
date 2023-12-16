@@ -1,13 +1,13 @@
 .about-me {
   @include padding(70px, 0, 70px, 0);
   align-items: center;
-  display: flex;
-  flex-wrap: wrap;
-  border-bottom: 1px solid $bright-black;
-  @media screen and (max-width: 1200px) {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+  display: grid;
+  grid-template-columns: 80% 20%;
+  // flex-wrap: wrap;
+  // @media screen and (max-width: 1200px) {
+  //   flex-direction: column;
+  //   align-items: flex-start;
+  // }
 }
 
 .about-me__motto {
@@ -60,7 +60,8 @@
   flex-direction: column;
   align-items: flex-end;
   background: $bright-black;
-  width: 485px;
+  // background-size: 30% 100%;
+  width: 485 px;
   @media screen and (max-width: 768px) {
     width: 100%;
   }

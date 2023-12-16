@@ -1,7 +1,22 @@
 .button {
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 50px;
+  @include padding(15px, 30px, 15px, 30px);
   &--white {
+    background: $white;
   }
 
   &--black {
+    gap: 10px;
+    padding: 10px 30px;
+    width: fit-content;
+    background: $bright-black;
+  }
+
+
+  &--bottom{
+    @include padding(15px, 60px, 15px, 60px);
   }
 }
