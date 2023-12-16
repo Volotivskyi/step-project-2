@@ -1,14 +1,13 @@
-.my-clients{
+.my-clients {
   border-bottom: 1px solid $bright-black;
   border-top: 1px solid $bright-black;
   @include padding(50px, 0, 50px, 0);
 }
 
-.my-clients-container {
+.my-clients__container {
   display: flex;
   flex-direction: column;
   gap: 50px;
-  @include padding(50px, 0, 50px, 0);
 }
 
 .my-clients__title-div {
@@ -27,7 +26,7 @@
 .my-clients__content {
   //   padding-left: 70px;
   //   padding-right: 70px;
-  height: 1214px;
+  @include padding(0, 0, 80px, 0);
 }
 
 .my-clients__list {
@@ -40,7 +39,6 @@
 .my-clients__element {
   @include padding(30px, 30px, 30px, 30px);
   height: 507px;
-  // width: 507px;
 }
 
 .my-clients__element:nth-child(1),
@@ -54,6 +52,21 @@
 .my-clients__element:nth-child(2),
 .my-clients__element:nth-child(3) {
   border-bottom: 1px solid black;
+}
+
+.my-clients__element:nth-child(1),
+.my-clients__element:nth-child(4) {
+  @include padding(30px, 50px, 30px, 30px);
+}
+
+.my-clients__element:nth-child(2),
+.my-clients__element:nth-child(5) {
+  @include padding(30px, 50px, 30px, 50px);
+}
+
+.my-clients__element:nth-child(3),
+.my-clients__element:nth-child(6) {
+  @include padding(30px, 30px, 30px, 50px);
 }
 
 .my-clients__element-content {
@@ -95,7 +108,7 @@
 .my-clients__title {
   color: #333;
   font-family: Gilroy;
-  @include text-properties(30px, 800, normal);
+  @include text-properties(40px, 800, 44px);
   width: 500px;
 }
 
