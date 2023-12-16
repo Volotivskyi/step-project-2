@@ -1,12 +1,10 @@
 .header__content {
   display: flex;
-  max-width: 1920px;
-  padding: 40px 70px;
+  @include padding(40px, 70px, 40px, 70px);
   flex-direction: column;
   align-items: center;
   gap: 30px;
   @media screen and (max-width: 768px) {
-  
   }
 }
 .header__nav {
@@ -22,52 +20,44 @@
   align-items: center;
 }
 .header__name {
-  color: #000;
+  color: $black;
   text-align: center;
   font-family: Gilroy;
-  font-size: 35px;
-  font-weight: 800;
-  line-height: normal;
+  @include text-properties(35px, 800, normal);
   letter-spacing: -0.7px;
 }
 .header__name--uppercase {
-  color: #000;
+  color: $black;
   font-family: Gilroy-Medium;
-  font-size: 35px;
-  font-weight: 400;
-  line-height: normal;
+  @include text-properties(35px, 400, normal);
   letter-spacing: -0.7px;
   text-transform: uppercase;
 }
 .header__menu {
-  color: #252525;
+  color: $bright-black;
   text-align: center;
   font-family: Gilroy-SemiBold;
-  font-size: 25px;
-  font-weight: 400;
-  line-height: normal;
+  @include text-properties(25px, 400, normal);
 }
 .header__title--name {
-  color: #252525;
+  color: $bright-black;
   text-align: center;
   font-family: Gilroy-SemiBold;
-  font-size: 150px;
-  font-weight: 400;
-  line-height: normal;
+  @include text-properties(150px, 400, normal);
   text-transform: uppercase;
+
   @media screen and (max-width: 768px) {
-font-size: 120px;
+    font-size: 120px;
   }
 }
 .header__title--company {
-  color: #252525;
+  color: $bright-black;
   font-family: Gilroy;
-  font-size: 150px;
-  font-weight: 300;
-  line-height: normal;
+  @include text-properties(150px, 300, normal);
   text-transform: capitalize;
   position: relative;
   padding-bottom: 65px;
+  @include padding(0, 0, 65px, 0);
   @media screen and (max-width: 768px) {
     font-size: 120px;
   }
@@ -84,13 +74,12 @@ font-size: 120px;
   display: flex;
 }
 
-
 .hero__img {
   max-width: 100%;
   height: auto;
-  padding-top: 80px;
+  @include padding(80px, 0, 0, 0);
   object-fit: cover;
   @media screen and (max-width: 768px) {
-padding: 0;
-  } 
+    padding: 0;
+  }
 }

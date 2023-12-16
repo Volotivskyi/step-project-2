@@ -1,7 +1,6 @@
 .footer {
-  border-top: 1px solid #252525;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  border-top: 1px solid $bright-black;
+  @include padding(25px, 0, 25px, 0);
   align-items: center;
 }
 
@@ -11,16 +10,10 @@
   align-items: center;
 }
 
-.footer__name {
-}
-
 .footer__name-text {
-  color: #333;
+  color: $grey;
   font-family: Gilroy-Regular;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+  @include text-properties(18px, 400, normal);
 
   &--strong {
     font-family: Gilroy-SemiBold;

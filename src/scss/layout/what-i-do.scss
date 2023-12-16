@@ -12,33 +12,26 @@
   grid-template-rows: 1fr;
 }
 
-.what-i-do__background {
-}
-
 .what-i-do__content {
   display: flex;
   flex-direction: column;
-  padding-top: 70px;
-  padding-bottom: 70px;
+  @include padding(70px, 0, 70px, 0);
   gap: 100px;
 }
 
 .what-i-do__title {
-  color: #252525;
+  color: $bright-black;
   font-family: Gilroy;
-  font-size: 150px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: normal;
+  @include text-properties(150px, 400, normal);
   text-transform: uppercase;
-  padding-left: 111px;
+  @include padding(0, 0, 0, 111px);
 }
 
 .what-i-do__text-block {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  padding-left: 111px;
+  @include padding(0, 0, 0, 111px);
 }
 
 .what-i-do__design-type {
@@ -49,81 +42,48 @@
 }
 
 .what-i-do__design-name {
-  color: #000;
+  color: $black;
   font-family: Gilroy-SemiBold;
-  font-size: 44px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 48px;
+  @include text-properties(44px, 400, 48px);
   text-transform: uppercase;
-  padding-left: 60px;
+  @include padding(0, 0, 0, 60px);
 
   &--first::before {
     content: "01";
-    color: #000;
-    font-family: Gilroy-Light;
-    font-size: 44px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 48px;
-    text-transform: uppercase;
-    position: absolute;
-    left: 0;
   }
 
   &--second::before {
     content: "02";
-    color: #000;
-    font-family: Gilroy-Light;
-    font-size: 44px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 48px;
-    text-transform: uppercase;
-    position: absolute;
-    left: 0;
   }
 
   &--third::before {
     content: "03";
-    color: #000;
-    font-family: Gilroy-Light;
-    font-size: 44px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 48px;
-    text-transform: uppercase;
-    position: absolute;
-    left: 0;
   }
 
   &--forth::before {
     content: "04";
-    color: #000;
-    font-family: Gilroy-Light;
-    font-size: 44px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 48px;
-    text-transform: uppercase;
-    position: absolute;
-    left: 0;
+    // color: #000;
+    // font-family: Gilroy-Light;
+    // font-size: 44px;
+    // font-style: normal;
+    // font-weight: 400;
+    // line-height: 48px;
+    // text-transform: uppercase;
+    // position: absolute;
+    // left: 0;
   }
 }
 
 .what-i-do__design-text {
-  color: #000;
+  color: $black;
   font-family: Inter;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 28px; /* 140% */
+  @include text-properties(20px, 400, 28px);
 }
 
 hr {
   height: 1px;
   width: 100%;
-  background-color: #252525;
+  background-color: $bright-black;
 }
 .what-i-do {
   height: 1226px;
@@ -139,33 +99,26 @@ hr {
   grid-template-rows: 1fr;
 }
 
-.what-i-do__background {
-}
-
 .what-i-do__content {
   display: flex;
   flex-direction: column;
-  padding-top: 70px;
-  padding-bottom: 70px;
+  @include padding(70px, 0, 70px, 0);
   gap: 100px;
 }
 
 .what-i-do__title {
-  color: #252525;
+  color: $bright-black;
   font-family: Gilroy;
-  font-size: 150px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: normal;
+  @include text-properties(150px, 300, normal);
   text-transform: uppercase;
-  padding-left: 111px;
+  @include padding(0, 0, 0, 111px);
 }
 
 .what-i-do__text-block {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  padding-left: 111px;
+  @include padding(0, 0, 0, 111px);
 }
 
 .what-i-do__design-type {
@@ -176,79 +129,49 @@ hr {
 }
 
 .what-i-do__design-name {
-  color: #000;
+  color: $black;
   font-family: Gilroy-SemiBold;
-  font-size: 44px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 48px;
+  @include text-properties(44px, 400, 48px);
   text-transform: uppercase;
-  padding-left: 60px;
+  @include padding(0, 0, 0, 60px);
 
   &--first::before {
     content: "01";
-    color: #000;
     font-family: Gilroy-Light;
-    font-size: 44px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 48px;
-    text-transform: uppercase;
     position: absolute;
     left: 0;
   }
 
   &--second::before {
     content: "02";
-    color: #000;
     font-family: Gilroy-Light;
-    font-size: 44px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 48px;
-    text-transform: uppercase;
     position: absolute;
     left: 0;
   }
 
   &--third::before {
     content: "03";
-    color: #000;
     font-family: Gilroy-Light;
-    font-size: 44px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 48px;
-    text-transform: uppercase;
     position: absolute;
     left: 0;
   }
 
   &--forth::before {
     content: "04";
-    color: #000;
     font-family: Gilroy-Light;
-    font-size: 44px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 48px;
-    text-transform: uppercase;
     position: absolute;
     left: 0;
   }
 }
 
 .what-i-do__design-text {
-  color: #000;
+  color: $black;
   font-family: Inter;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 28px; /* 140% */
+  @include text-properties(20px, 400, normal);
 }
 
 hr {
   height: 1px;
   width: 100%;
-  background-color: #252525;
+  background-color: $bright-black;
 }
