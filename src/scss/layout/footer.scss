@@ -1,0 +1,41 @@
+.footer {
+  border-top: 1px solid #252525;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  align-items: center;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__name {
+}
+
+.footer__name-text {
+  color: #333;
+  font-family: Gilroy-Regular;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  &--strong {
+    font-family: Gilroy-SemiBold;
+  }
+}
+
+.footer__socials {
+  display: flex;
+}
+
+.footer__socials-list {
+  display: flex;
+  gap: 10px;
+}
+
+.footer__socials-element {
+  display: flex;
+}
