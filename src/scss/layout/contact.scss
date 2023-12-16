@@ -37,15 +37,6 @@
   @include text-properties(34px, 400, normal);
 }
 
-.contact__button {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  padding: 10px 30px;
-  border-radius: 50px;
-  width: fit-content;
-  background: $bright-black;
-}
 
 .contact__button-text {
   color: $white;

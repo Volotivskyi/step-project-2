@@ -1,4 +1,10 @@
-.my-clients {
+.my-clients{
+  border-bottom: 1px solid $bright-black;
+  border-top: 1px solid $bright-black;
+  @include padding(50px, 0, 50px, 0);
+}
+
+.my-clients-container {
   display: flex;
   flex-direction: column;
   gap: 50px;
@@ -11,7 +17,7 @@
 
 .my-clients__main-title {
   color: $bright-black;
-  font-family: Gilroy;
+  font-family: Gilroy-Regular;
   @include text-properties(212px, 300, normal);
   letter-spacing: 8.48px;
   text-transform: uppercase;
