@@ -1,5 +1,9 @@
 .what-i-do {
   height: 1226px;
+  background-image: url(/images/what-i-do-bgd.jpg);
+  background-repeat: no-repeat;
+  background-size: 50% 100%;
+  background-position: left top;
 }
 
 .what-i-do__list {
@@ -8,18 +12,7 @@
   grid-template-rows: 1fr;
 }
 
-// background-image: url(/images/what-i-do-bgd.jpg);
-// background-repeat: no-repeat;
-// background-size: 50% 100%;
-// background-position: left top;
-
-.what-i-do__image {
-  // // width: 100%;
-  height: 1226px;
-  max-width: 100%;
-  width: 100%;
-  object-fit: cover;
-  object-position: center center;
+.what-i-do__background {
 }
 
 .what-i-do__content {
@@ -52,17 +45,7 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-}
-
-.what-i-do__design-num {
-  color: #000;
-
-  font-family: Gilroy-Light;
-  font-size: 44px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 48px; /* 109.091% */
-  text-transform: uppercase;
+  position: relative;
 }
 
 .what-i-do__design-name {
@@ -73,6 +56,186 @@
   font-weight: 400;
   line-height: 48px;
   text-transform: uppercase;
+  padding-left: 60px;
+
+  &--first::before {
+    content: "01";
+    color: #000;
+    font-family: Gilroy-Light;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 48px;
+    text-transform: uppercase;
+    position: absolute;
+    left: 0;
+  }
+
+  &--second::before {
+    content: "02";
+    color: #000;
+    font-family: Gilroy-Light;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 48px;
+    text-transform: uppercase;
+    position: absolute;
+    left: 0;
+  }
+
+  &--third::before {
+    content: "03";
+    color: #000;
+    font-family: Gilroy-Light;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 48px;
+    text-transform: uppercase;
+    position: absolute;
+    left: 0;
+  }
+
+  &--forth::before {
+    content: "04";
+    color: #000;
+    font-family: Gilroy-Light;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 48px;
+    text-transform: uppercase;
+    position: absolute;
+    left: 0;
+  }
+}
+
+.what-i-do__design-text {
+  color: #000;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 140% */
+}
+
+hr {
+  height: 1px;
+  width: 100%;
+  background-color: #252525;
+}
+.what-i-do {
+  height: 1226px;
+  background-image: url(/images/what-i-do-bgd.jpg);
+  background-repeat: no-repeat;
+  background-size: 50% 100%;
+  background-position: left top;
+}
+
+.what-i-do__list {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr;
+}
+
+.what-i-do__background {
+}
+
+.what-i-do__content {
+  display: flex;
+  flex-direction: column;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  gap: 100px;
+}
+
+.what-i-do__title {
+  color: #252525;
+  font-family: Gilroy;
+  font-size: 150px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-transform: uppercase;
+  padding-left: 111px;
+}
+
+.what-i-do__text-block {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding-left: 111px;
+}
+
+.what-i-do__design-type {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+}
+
+.what-i-do__design-name {
+  color: #000;
+  font-family: Gilroy-SemiBold;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 48px;
+  text-transform: uppercase;
+  padding-left: 60px;
+
+  &--first::before {
+    content: "01";
+    color: #000;
+    font-family: Gilroy-Light;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 48px;
+    text-transform: uppercase;
+    position: absolute;
+    left: 0;
+  }
+
+  &--second::before {
+    content: "02";
+    color: #000;
+    font-family: Gilroy-Light;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 48px;
+    text-transform: uppercase;
+    position: absolute;
+    left: 0;
+  }
+
+  &--third::before {
+    content: "03";
+    color: #000;
+    font-family: Gilroy-Light;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 48px;
+    text-transform: uppercase;
+    position: absolute;
+    left: 0;
+  }
+
+  &--forth::before {
+    content: "04";
+    color: #000;
+    font-family: Gilroy-Light;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 48px;
+    text-transform: uppercase;
+    position: absolute;
+    left: 0;
+  }
 }
 
 .what-i-do__design-text {
