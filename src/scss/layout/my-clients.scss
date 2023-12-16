@@ -75,35 +75,67 @@
   gap: 30px;
 }
 
-.my-clients__element-logo-1 {
-  width: 180px;
-  height: 35px;
+.my-clients__element-logo {
+  &--first {
+    width: 180px;
+    height: 35px;
+  }
+
+  &--second {
+    width: 84px;
+    height: 40px;
+  }
+
+  &--third {
+    width: 175px;
+    height: 35px;
+  }
+
+  &--forth {
+    width: 152px;
+    height: 34px;
+  }
+
+  &--fifth {
+    width: 180px;
+    height: 35px;
+  }
+
+  &--seventh {
+    width: 150px;
+    height: 35px;
+  }
 }
 
-.my-clients__element-logo-2 {
-  width: 84px;
-  height: 40px;
-}
+// .my-clients__element-logo-1 {
+//   width: 180px;
+//   height: 35px;
+// }
 
-.my-clients__element-logo-3 {
-  width: 175px;
-  height: 35px;
-}
+// .my-clients__element-logo-2 {
+//   width: 84px;
+//   height: 40px;
+// }
 
-.my-clients__element-logo-4 {
-  width: 152px;
-  height: 34px;
-}
+// .my-clients__element-logo-3 {
+//   width: 175px;
+//   height: 35px;
+// }
 
-.my-clients__element-logo-6 {
-  width: 180px;
-  height: 35px;
-}
+// .my-clients__element-logo-4 {
+//   width: 152px;
+//   height: 34px;
+// }
 
-.my-clients__element-logo-7 {
-  width: 145px;
-  height: 35px;
-}
+// .my-clients__element-logo-6 {
+//   width: 180px;
+//   height: 35px;
+// }
+
+// .my-clients__element-logo-7 {
+//   width: 145px;
+//   height: 35px;
+// }
 
 .my-clients__title {
   color: #333;
