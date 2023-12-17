@@ -16,8 +16,15 @@
     background: $bright-black;
   }
 
-
-  &--bottom{
+  &--bottom {
     @include padding(15px, 60px, 15px, 60px);
+  }
+
+  &--black-footer {
+    gap: 10px;
+    padding: 10px 30px;
+    width: 100%;
+    background: $bright-black;
+    justify-content: center;
   }
 }

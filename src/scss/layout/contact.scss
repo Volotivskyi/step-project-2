@@ -9,6 +9,18 @@
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   gap: 40px;
+
+  @media screen and (max-width: 1510px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+}
+
+.contact__title-div {
+  @media screen and (max-width: 1510px) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .contact__title {
@@ -16,12 +28,21 @@
   font-family: Gilroy;
   @include text-properties(155px, 300, normal);
   text-transform: uppercase;
+
+  @media screen and (max-width: 800px) {
+    font-size: 80px;
+  }
 }
 
 .contact__text-div {
   display: flex;
   flex-direction: column;
   gap: 30px;
+
+  @media screen and (max-width: 1510px) {
+    text-align: center;
+    align-items: center;
+  }
 }
 
 .contact__subtitle {
@@ -29,14 +50,21 @@
   font-family: Gilroy-Bold;
   @include text-properties(64px, 400, normal);
   text-transform: uppercase;
+
+  @media screen and (max-width: 800px) {
+    font-size: 50px;
+  }
 }
 
 .contact__text {
   color: $bright-black;
   font-family: Gilroy-Medium;
   @include text-properties(34px, 400, normal);
-}
 
+  @media screen and (max-width: 800px) {
+    font-size: 34px;
+  }
+}
 
 .contact__button-text {
   color: $white;

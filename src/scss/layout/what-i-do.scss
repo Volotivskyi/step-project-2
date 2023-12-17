@@ -60,6 +60,10 @@
   @media screen and (max-width: 850px) {
     font-size: 80px;
   }
+
+  @media screen and (max-width: 450px) {
+    font-size: 50px;
+  }
 }
 .what-i-do__text-block {
   display: flex;
@@ -91,7 +95,12 @@
 
   @media screen and (max-width: 850px) {
     font-size: 35px;
-    @include padding(0, 0, 0, 45px);
+    @include padding(0, 0, 0, 50px);
+  }
+
+  @media screen and (max-width: 550px) {
+    font-size: 30px;
+    @include padding(0, 0, 0, 40px);
   }
 
   &--first::before {
@@ -102,6 +111,10 @@
 
     @media screen and (max-width: 850px) {
       font-size: 35px;
+    }
+
+    @media screen and (max-width: 550px) {
+      font-size: 30px;
     }
   }
 
@@ -114,6 +127,10 @@
     @media screen and (max-width: 850px) {
       font-size: 35px;
     }
+
+    @media screen and (max-width: 550px) {
+      font-size: 30px;
+    }
   }
 
   &--third::before {
@@ -125,6 +142,10 @@
     @media screen and (max-width: 850px) {
       font-size: 35px;
     }
+
+    @media screen and (max-width: 550px) {
+      font-size: 30px;
+    }
   }
 
   &--forth::before {
@@ -135,6 +156,10 @@
 
     @media screen and (max-width: 850px) {
       font-size: 35px;
+    }
+
+    @media screen and (max-width: 550px) {
+      font-size: 30px;
     }
   }
 }
