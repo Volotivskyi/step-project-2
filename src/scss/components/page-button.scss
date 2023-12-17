@@ -23,8 +23,11 @@
   &--black-footer {
     gap: 10px;
     padding: 10px 30px;
-    width: 100%;
     background: $bright-black;
-    justify-content: center;
+    @media screen and (max-width: 830px) {
+      width: 100%;
+
+      justify-content: center;
+    }
   }
 }

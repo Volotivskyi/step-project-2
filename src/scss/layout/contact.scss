@@ -2,6 +2,10 @@
   display: flex;
   @include padding(50px, 0, 100px, 0);
   border-top: 1px solid $bright-black;
+
+  @media screen and (max-width: 1510px) {
+    @include padding(30px, 0, 50px, 0);
+  }
 }
 
 .contact__container {
@@ -13,6 +17,7 @@
   @media screen and (max-width: 1510px) {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
+    gap: 30px;
   }
 }
 
