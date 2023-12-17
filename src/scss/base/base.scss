@@ -2,14 +2,14 @@
   max-width: 1780px;
   margin: 0 auto;
 
-  // @media screen and (max-width: 1200px) {
-  //   padding-left: 30px;
-  //   padding-right: 30px;
-  // }
-  // @media screen and (max-width: 475px) {
-  //   padding-left: 20px;
-  //   padding-right: 20px;
-  // }
+  @media screen and (max-width: 1200px) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  @media screen and (max-width: 475px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 .body {
   background-color: #f5f3ea;
