@@ -4,42 +4,83 @@
   background-size: 50% 100%;
   background-position: left top;
   border-bottom: 1px solid $bright-black;
+
+  @media screen and (max-width: 1810px) {
+    background-size: 100% 50%;
+  }
+
+  @media screen and (max-width: 700px) {
+    background-size: 100% 478px;
+  }
 }
 
-.what-i-do__list {
+.what-i-do__grid {
   display: grid;
   grid-template-columns: 50% 50%;
-}
+  grid-template-rows: 1fr;
 
+  @media screen and (max-width: 1810px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  @media screen and (max-width: 700px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 478px 1fr;
+  }
+}
 .what-i-do__content {
   display: flex;
   flex-direction: column;
   @include padding(70px, 0, 70px, 0);
-  gap: 40px;
-}
+  gap: 100px;
 
+  @media screen and (max-width: 1810px) {
+    gap: 40px;
+    @include padding(40px, 0, 40px, 0);
+  }
+
+  @media screen and (max-width: 850px) {
+    @include padding(20px, 0, 20px, 0);
+  }
+}
 .what-i-do__title {
   color: $bright-black;
-  font-family: Gilroy-ExtraBold;
+  font-family: Gilroy;
+
   @include text-properties(150px, 400, normal);
   text-transform: uppercase;
   @include padding(0, 0, 0, 111px);
-}
 
+  @media screen and (max-width: 1810px) {
+    text-align: center;
+    padding: 0;
+  }
+
+  @media screen and (max-width: 850px) {
+    font-size: 80px;
+  }
+}
 .what-i-do__text-block {
   display: flex;
   flex-direction: column;
   gap: 40px;
   @include padding(0, 0, 0, 111px);
-}
 
+  @media screen and (max-width: 1810px) {
+    @include padding(0, 30px, 0, 30px);
+  }
+
+  @media screen and (max-width: 850px) {
+    gap: 30px;
+  }
+}
 .what-i-do__design-type {
   display: flex;
   flex-direction: column;
   gap: 10px;
   position: relative;
 }
-
 .what-i-do__design-name {
   color: $black;
   font-family: Gilroy-SemiBold;
@@ -47,29 +88,53 @@
   text-transform: uppercase;
   @include padding(0, 0, 0, 60px);
 
+  @media screen and (max-width: 850px) {
+    font-size: 35px;
+    @include padding(0, 0, 0, 50px);
+  }
+
   &--first::before {
     content: "01";
+    font-family: Gilroy-Light;
+    position: absolute;
+    left: 0;
+
+    @media screen and (max-width: 850px) {
+      font-size: 35px;
+    }
   }
 
   &--second::before {
     content: "02";
+    font-family: Gilroy-Light;
+    position: absolute;
+    left: 0;
+
+    @media screen and (max-width: 850px) {
+      font-size: 35px;
+    }
   }
 
   &--third::before {
     content: "03";
+    font-family: Gilroy-Light;
+    position: absolute;
+    left: 0;
+
+    @media screen and (max-width: 850px) {
+      font-size: 35px;
+    }
   }
 
   &--forth::before {
     content: "04";
-    // color: #000;
-    // font-family: Gilroy-Light;
-    // font-size: 44px;
-    // font-style: normal;
-    // font-weight: 400;
-    // line-height: 48px;
-    // text-transform: uppercase;
-    // position: absolute;
-    // left: 0;
+    font-family: Gilroy-Light;
+    position: absolute;
+    left: 0;
+
+    @media screen and (max-width: 850px) {
+      font-size: 35px;
+    }
   }
 }
 
@@ -77,90 +142,6 @@
   color: $black;
   font-family: Inter;
   @include text-properties(20px, 400, 28px);
-}
-
-hr {
-  height: 1px;
-  width: 100%;
-  background-color: $bright-black;
-}
-
-
-.what-i-do__list {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 1fr;
-}
-
-.what-i-do__content {
-  display: flex;
-  flex-direction: column;
-  @include padding(70px, 0, 70px, 0);
-  gap: 100px;
-}
-
-.what-i-do__title {
-  color: $bright-black;
-  font-family: Gilroy;
-  @include text-properties(150px, 300, normal);
-  text-transform: uppercase;
-  @include padding(0, 0, 0, 111px);
-}
-
-.what-i-do__text-block {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  @include padding(0, 0, 0, 111px);
-}
-
-.what-i-do__design-type {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  position: relative;
-}
-
-.what-i-do__design-name {
-  color: $black;
-  font-family: Gilroy-SemiBold;
-  @include text-properties(44px, 400, 48px);
-  text-transform: uppercase;
-  @include padding(0, 0, 0, 60px);
-
-  &--first::before {
-    content: "01";
-    font-family: Gilroy-Light;
-    position: absolute;
-    left: 0;
-  }
-
-  &--second::before {
-    content: "02";
-    font-family: Gilroy-Light;
-    position: absolute;
-    left: 0;
-  }
-
-  &--third::before {
-    content: "03";
-    font-family: Gilroy-Light;
-    position: absolute;
-    left: 0;
-  }
-
-  &--forth::before {
-    content: "04";
-    font-family: Gilroy-Light;
-    position: absolute;
-    left: 0;
-  }
-}
-
-.what-i-do__design-text {
-  color: $black;
-  font-family: Inter;
-  @include text-properties(20px, 400, normal);
 }
 
 hr {
