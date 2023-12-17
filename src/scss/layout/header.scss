@@ -5,7 +5,7 @@
   align-items: center;
   gap: 30px;
 
-  @media screen and (max-width: 1300px) {
+@media screen and (max-width: 1300px) {
     @include padding(40px, 30px, 40px, 30px);
 
   }
