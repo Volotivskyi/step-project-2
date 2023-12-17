@@ -3,6 +3,10 @@
   @include padding(50px, 0, 50px, 0);
   flex-direction: column;
   gap: 50px;
+  @media screen and (max-width: 1810px) {
+    @include padding(30px, 30px, 50px, 30px);
+    gap: 30px;
+      }
 }
 .our-team__title {
   color: $bright-black;
@@ -14,6 +18,10 @@
   @include padding(0, 70px, 0, 70px);
   justify-content: center;
   align-items: center;
+  @media screen and (max-width: 1810px) {
+    letter-spacing: normal;
+    font-size: 150px;
+      }
 }
 
 .team {
@@ -22,6 +30,14 @@
   grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 40px;
   grid-row-gap: 30px;
+  @media screen and (max-width: 1810px) {
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+      }
+      @media screen and (max-width: 991px) {
+        grid-template-rows: repeat(8, 1fr);
+        grid-template-columns: 1fr;
+          }
 }
 
 .team__box {
@@ -32,6 +48,11 @@
   flex-direction: column;
   gap: 15px;
   align-self: stretch;
+  @media screen and (max-width: 1810px) {
+    justify-self: center;
+    align-self: center;
+    width: 446px;
+      }
 }
 .team__content {
   display: flex;
@@ -72,6 +93,9 @@
   padding: 30px 0px;
   flex-direction: column;
   justify-content: space-between;
+  @media screen and (max-width: 991px) {
+    padding: 0;
+      }
 }
 
 .team__box-container {
