@@ -68,11 +68,14 @@
     font-size: 120px;
   }
 
-  @media screen and (max-width: 950px) {
+  @media screen and (max-width: 1050px) {
     font-size: 57px;
   }
   @media screen and (max-width: 475px) {
     font-size: 50px;
+  }
+  @media screen and (max-width: 400px) {
+    font-size: 30px;
   }
 }
 .header__title--company {
@@ -81,17 +84,19 @@
   text-transform: capitalize;
   position: relative;
   @include text-properties(150px, 300, normal);
-  // @include padding(0, 0, 65px, 0);
 
   @media screen and (max-width: 1300px) {
     font-size: 120px;
   }
 
-  @media screen and (max-width: 950px) {
+  @media screen and (max-width: 1050px) {
     font-size: 57px;
   }
   @media screen and (max-width: 475px) {
     font-size: 50px;
+  }
+  @media screen and (max-width: 400px) {
+    font-size: 30px;
   }
 
   &::after {
