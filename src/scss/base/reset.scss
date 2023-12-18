@@ -19,7 +19,6 @@ h6,
 p,
 blockquote,
 pre,
-a,
 abbr,
 acronym,
 address,
@@ -88,7 +87,7 @@ video {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit;
+  // font: inherit;
   vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -126,4 +125,10 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+a {
+  text-decoration: none;
+}
+hr {
+  margin: 0;
 }

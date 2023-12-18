@@ -2,16 +2,14 @@
   max-width: 1780px;
   margin: 0 auto;
 
-  // @media screen and (max-width: 1200px) {
-  //   padding-left: 30px;
-  //   padding-right: 30px;
-  // }
-  // @media screen and (max-width: 475px) {
-  //   padding-left: 20px;
-  //   padding-right: 20px;
-  // }
+  @media screen and (max-width: 1200px) {
+    @include padding(0, 30px, 0, 30px);
+  }
+  @media screen and (max-width: 475px) {
+    @include padding(0, 20px, 0, 20px);
+  }
 }
 .body {
   background-color: #f5f3ea;
-  font-family: Gilroy-ExtraBold, Gilroy-Light;
+  font-family: 'Gilroy-Bold', 'Gilroy-ExtraBold', 'Gilroy-Light', 'Gilroy-Medium', 'Gilroy-Regular', 'gilroy-semibold', 'Inter';
 }

@@ -1,45 +1,91 @@
 .my-clients {
+  border-bottom: 1px solid $bright-black;
+  border-top: 1px solid $bright-black;
+  @include padding(50px, 0, 50px, 0);
+
+  @media screen and (max-width: 1810px) {
+    @include padding(30px, 30px, 30px, 30px);
+  }
+
+  @media screen and (max-width: 1200px) {
+    @include padding(50px, 0, 0, 0);
+  }
+
+  @media screen and (max-width: 900px) {
+    @include padding(50px, 0, 0, 0);
+  }
+}
+
+.my-clients__container {
   display: flex;
   flex-direction: column;
   gap: 50px;
-  padding-top: 50px;
-  padding-bottom: 50px;
+
+  @media screen and (max-width: 1810px) {
+    gap: 30px;
+  }
 }
 
 .my-clients__title-div {
-  padding-left: 70px;
-  padding-right: 70px;
+  @include padding(0, 70px, 0, 70px);
+
+  @media screen and (max-width: 1810px) {
+    padding: 0;
+  }
 }
 
 .my-clients__main-title {
-  color: #252525;
-  font-family: Gilroy;
-  font-size: 212px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: normal;
+  color: $bright-black;
+  font-family: Gilroy-Regular;
+  @include text-properties(212px, 300, normal);
   letter-spacing: 8.48px;
   text-transform: uppercase;
   text-align: center;
+
+  @media screen and (max-width: 1320px) {
+    font-size: 150px;
+  }
+
+  @media screen and (max-width: 960px) {
+    font-size: 80px;
+  }
+
+  @media screen and (max-width: 560px) {
+    font-size: 50px;
+  }
 }
 
 .my-clients__content {
-  //   padding-left: 70px;
-  //   padding-right: 70px;
-  height: 1214px;
+  @include padding(0, 0, 80px, 0);
+
+  @media screen and (max-width: 1810px) {
+    padding: 0;
+  }
 }
 
 .my-clients__list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  // column-gap: 38px;
+
+  @media screen and (max-width: 1810px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+  }
 }
 
 .my-clients__element {
-  padding: 30px;
+  @include padding(30px, 30px, 30px, 30px);
   height: 507px;
-  // width: 507px;
+
+  @media screen and (max-width: 1810px) {
+    @include padding(40px, 0, 40px, 0);
+    height: auto;
+    border-bottom: 1px solid black;
+  }
+
+  @media screen and (max-width: 900px) {
+  }
 }
 
 .my-clients__element:nth-child(1),
@@ -47,12 +93,51 @@
 .my-clients__element:nth-child(4),
 .my-clients__element:nth-child(5) {
   border-right: 1px solid black;
+
+  @media screen and (max-width: 1810px) {
+    border-right: none;
+  }
 }
 
 .my-clients__element:nth-child(1),
 .my-clients__element:nth-child(2),
 .my-clients__element:nth-child(3) {
   border-bottom: 1px solid black;
+
+  @media screen and (max-width: 1810px) {
+    border-right: none;
+  }
+}
+
+.my-clients__element:nth-child(1),
+.my-clients__element:nth-child(4) {
+  @include padding(30px, 50px, 30px, 30px);
+
+  @media screen and (max-width: 1810px) {
+    @include padding(40px, 0, 40px, 0);
+  }
+}
+
+.my-clients__element:nth-child(2),
+.my-clients__element:nth-child(5) {
+  @include padding(30px, 50px, 30px, 50px);
+
+  @media screen and (max-width: 1810px) {
+    @include padding(40px, 0, 40px, 0);
+  }
+}
+
+.my-clients__element:nth-child(3),
+.my-clients__element:nth-child(6) {
+  @include padding(30px, 30px, 30px, 50px);
+
+  @media screen and (max-width: 1810px) {
+    @include padding(40px, 0, 40px, 0);
+  }
+}
+
+.my-clients__element:nth-child(6) {
+  border: none;
 }
 
 .my-clients__element-content {
@@ -61,53 +146,52 @@
   gap: 30px;
 }
 
-.my-clients__element-logo-1 {
-  width: 180px;
-  height: 35px;
-}
+.my-clients__element-logo {
+  &--first {
+    width: 180px;
+    height: 35px;
+  }
 
-.my-clients__element-logo-2 {
-  width: 84px;
-  height: 40px;
-}
+  &--second {
+    width: 84px;
+    height: 40px;
+  }
 
-.my-clients__element-logo-3 {
-  width: 175px;
-  height: 35px;
-}
+  &--third {
+    width: 175px;
+    height: 35px;
+  }
 
-.my-clients__element-logo-4 {
-  width: 152px;
-  height: 34px;
-}
+  &--forth {
+    width: 152px;
+    height: 34px;
+  }
 
-.my-clients__element-logo-6 {
-  width: 180px;
-  height: 35px;
-}
+  &--fifth {
+    width: 180px;
+    height: 35px;
+  }
 
-.my-clients__element-logo-7 {
-  width: 145px;
-  height: 35px;
+  &--seventh {
+    width: 150px;
+    height: 35px;
+  }
 }
 
 .my-clients__title {
   color: #333;
   font-family: Gilroy;
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: 44px;
+  @include text-properties(40px, 800, 44px);
   width: 500px;
+  @media screen and (max-width: 1810px) {
+    width: 100%;
+  }
 }
 
 .my-clients__text {
-  color: #000;
+  color: $black;
   font-family: Inter;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 30px;
+  @include text-properties(20px, 400, 30px);
 }
 
 .my-clients__person-content {
@@ -129,19 +213,13 @@
 }
 
 .my-clients__person-name {
-  color: #000;
+  color: $black;
   font-family: Inter;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 20px; /* 100% */
+  @include text-properties(20px, 600, 20px);
 }
 
 .my-clients__person-job {
-  color: #000;
+  color: $black;
   font-family: Inter;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 20px; /* 100% */
+  @include text-properties(20px, 400, 20px);
 }

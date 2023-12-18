@@ -1,89 +1,102 @@
-.about-me{
-    padding: 70px 0px;
-align-items: center;
-display: flex;
-flex-wrap: wrap;
-border-bottom: 1px solid #252525;
-@media screen and (max-width: 1200px) {
-flex-direction: column;
-align-items: flex-start;
+.about-me {
+  @include padding(70px, 0, 70px, 0);
+  align-items: center;
+  display: flex;
+flex: 80%;
+
+  @media screen and (max-width: 1870px) {
+    flex-direction: column;
+    @include padding(30px, 0, 0, 0);
   }
 }
 
-.about-me__motto{
-    color: #252525;
-font-family: Gilroy;
-font-size: 62px;
-font-weight: 300;
-line-height: normal;
-padding: 0px 70px;
-max-width: 1295px;
-word-wrap: break-word;
-text-align: center;
-@media screen and (max-width: 768px) {
-font-size: 52px;
-max-height: 248px;
-padding: 0px;
-      }
-      @media screen and (max-width: 475px) {
-        font-size: 30px;
-        max-height: 179px;
-              }
-              @media screen and (max-width: 400px) {
-                font-size: 24px;
-                max-height: 179px;
-                      }
-}
-.about-me__motto--bold{
-    color: #252525;
-font-family: Gilroy;
-font-size: 62px;
-font-weight: 800;
-line-height: normal;
-max-width: 1295px;
-word-wrap: break-word;
-@media screen and (max-width: 768px) {
+.about-me__motto {
+  color: $bright-black;
+  font-family: Gilroy;
+  @include text-properties(62px, 300, normal);
+  @include padding(0, 70px, 0, 70px);
+  min-width: 1295px;
+  word-wrap: break-word;
+  text-align: center;
+  box-sizing: border-box;
+  @media screen and (max-width: 1870px) {
+
+    @include padding(0, 70px, 30px, 70px);
+    min-width: 100%;
+  }
+  @media screen and (max-width: 991px) {
     font-size: 52px;
-    max-width: 930px;
+    @include padding(0, 30px, 30px, 30px);
+
+  }
+  @media screen and (max-width: 550px) {
+    font-size: 30px;
+    max-height: 179px;
+    @include padding(0, 20px, 30px, 20px);
+
+  }
+  @media screen and (max-width: 400px) {
+    font-size: 24px;
+    max-height: 179px;
+  }
+}
+.about-me__motto--bold {
+  color: $bright-black;
+  font-family: Gilroy;
+  @include text-properties(62px, 800, normal);
+
+  @media screen and (max-width: 991px) {
+    font-size: 52px;
+   
     height: 248px;
-          }
-          @media screen and (max-width: 475px) {
-            font-size: 30px;
-            max-height: 179px;
-                  }
-                  @media screen and (max-width: 400px) {
-                    font-size: 24px;
-                    max-height: 179px;
-                          }
-}
-.about-me__content{
-    box-sizing: border-box;
-    display: flex;
-    padding: 60px 70px 60px 0px; 
-    gap: 30px;
-    flex-direction: column;
-    align-items: flex-end;
-    background: #252525;
-    width: 485px;
-@media screen and (max-width: 768px) {
-width: 100%;
+  }
+  @media screen and (max-width: 550px) {
+    font-size: 30px;
+    max-height: 179px;
 
+  }
+  @media screen and (max-width: 400px) {
+    font-size: 24px;
+    max-height: 179px;
+  }
+}
+.about-me__content {
+  box-sizing: border-box;
+  display: flex;
+  @include padding(60px, 0, 60px, 0);
+  gap: 30px;
+  flex-direction: column;
+  align-items: flex-end;
+width: 415px;
+ @media screen and (max-width: 1870px) {
+  width: 100%;
+  @include padding(40px, 30px, 40px, 30px);
+}
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+}
 
-          }
+.about-me__container{
+  background: $bright-black;
+ width: 100%;
+
 }
-.about-me__text{
-    color: #FFF;
-text-align: right;
-font-family: Gilroy-Medium;
-font-size: 32px;
-font-weight: 400;
-line-height: 32px;
-text-transform: uppercase;
+.about-me__text {
+  color: $white;
+display: flex;
+  text-align: right;
+  font-family: Gilroy-Medium;
+  @include text-properties(32px, 400, 32px);
+  text-transform: uppercase;
+  @media screen and (max-width: 1870px) {
+font-size: 28px;
+  }
 }
-.about-me__icons{
-    display: flex;
-justify-content: flex-end;
-align-items: center;
-gap: 20px;
-align-self: stretch;
+.about-me__icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+  align-self: stretch;
 }

@@ -1,7 +1,11 @@
 .contact {
   display: flex;
-  padding-top: 50px;
-  padding-bottom: 100px;
+  @include padding(50px, 0, 100px, 0);
+  border-top: 1px solid $bright-black;
+
+  @media screen and (max-width: 1510px) {
+    @include padding(30px, 0, 50px, 0);
+  }
 }
 
 .contact__container {
@@ -9,63 +13,71 @@
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   gap: 40px;
+
+  @media screen and (max-width: 1510px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 30px;
+  }
+}
+
+.contact__title-div {
+  @media screen and (max-width: 1510px) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .contact__title {
-}
-
-.contact__title {
-  color: #333;
-  font-family: Gilroy;
-  font-size: 155px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: normal;
+  color: $grey;
+  font-family: Gilroy-Regular;
+  @include text-properties(155px, 300, normal);
   text-transform: uppercase;
+
+  @media screen and (max-width: 800px) {
+    font-size: 80px;
+  }
+  @media screen and (max-width: 475px) {
+    font-size: 50px;
+  }
 }
 
 .contact__text-div {
   display: flex;
   flex-direction: column;
   gap: 30px;
+
+  @media screen and (max-width: 1510px) {
+    text-align: center;
+    align-items: center;
+  }
 }
 
 .contact__subtitle {
-  color: #252525;
+  color: $bright-black;
   font-family: Gilroy-Bold;
-  font-size: 64px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+  @include text-properties(64px, 400, normal);
   text-transform: uppercase;
+
+  @media screen and (max-width: 800px) {
+    font-size: 50px;
+  }
 }
 
 .contact__text {
-  color: #252525;
+  color: $bright-black;
   font-family: Gilroy-Medium;
-  font-size: 34px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
+  @include text-properties(34px, 400, normal);
 
-.contact__button {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  padding: 10px 30px;
-  border-radius: 50px;
-  width: fit-content;
-  background: #252525;
+  @media screen and (max-width: 800px) {
+    font-size: 34px;
+  }
 }
 
 .contact__button-text {
-  color: #fff;
+  color: $white;
   font-family: Gilroy-Medium;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+  @include text-properties(18px, 400, normal);
   text-transform: capitalize;
   text-align: start;
 }

@@ -1,0 +1,42 @@
+.button {
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  @include padding(15px, 30px, 15px, 30px);
+  &--white {
+    font-family: Gilroy-Medium;
+    background: $white;
+  }
+
+  &--black {
+    font-family: Gilroy-Medium;
+    gap: 10px;
+    padding: 10px 30px;
+    width: fit-content;
+    background: $bright-black;
+  }
+
+  &--bottom {
+    font-family: Gilroy-Medium;
+    @include padding(15px, 60px, 15px, 60px);
+    background: $white;
+    @media screen and (max-width: 475px) {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+              }
+  }
+
+  &--long {
+    gap: 10px;
+    padding: 10px 30px;
+    background: $bright-black;
+    width: fit-content;
+    @media screen and (max-width: 830px) {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+}
