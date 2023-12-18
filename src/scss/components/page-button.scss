@@ -21,16 +21,21 @@
   &--bottom {
     font-family: Gilroy-Medium;
     @include padding(15px, 60px, 15px, 60px);
+    background: $white;
+    @media screen and (max-width: 475px) {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+              }
   }
 
-  &--black-footer {
+  &--long {
     gap: 10px;
     padding: 10px 30px;
     background: $bright-black;
     width: fit-content;
     @media screen and (max-width: 830px) {
       width: 100%;
-
       justify-content: center;
     }
   }
