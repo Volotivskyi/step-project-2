@@ -19,10 +19,15 @@ flex: 80%;
   word-wrap: break-word;
   text-align: center;
   box-sizing: border-box;
+  @media screen and (max-width: 1870px) {
+
+    @include padding(0, 70px, 30px, 70px);
+    min-width: 100%;
+  }
   @media screen and (max-width: 991px) {
     font-size: 52px;
     @include padding(0, 30px, 30px, 30px);
-    min-width: 100%;
+
   }
   @media screen and (max-width: 550px) {
     font-size: 30px;
