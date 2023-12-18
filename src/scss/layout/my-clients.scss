@@ -8,10 +8,10 @@
   }
 
   @media screen and (max-width: 1200px) {
-    @include padding(50px, 0, 50px, 0);
+    @include padding(50px, 0, 0, 0);
   }
 
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 900px) {
     @include padding(50px, 0, 0, 0);
   }
 }
