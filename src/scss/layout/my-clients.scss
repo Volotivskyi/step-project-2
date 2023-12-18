@@ -10,6 +10,10 @@
   @media screen and (max-width: 1200px) {
     @include padding(50px, 0, 50px, 0);
   }
+
+  @media screen and (max-width: 700px) {
+    @include padding(50px, 0, 0, 0);
+  }
 }
 
 .my-clients__container {
@@ -76,8 +80,11 @@
 
   @media screen and (max-width: 1810px) {
     @include padding(40px, 0, 40px, 0);
-    height: fit-content;
+    height: auto;
     border-bottom: 1px solid black;
+  }
+
+  @media screen and (max-width: 900px) {
   }
 }
 
