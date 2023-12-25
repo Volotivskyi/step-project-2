@@ -18,7 +18,8 @@
   color: $bright-black;
   text-align: center;
   font-family: Gilroy-Regular;
-  @include text-properties(212px, 300, normal);
+  @include text-properties(300, normal);
+  font-size: clamp(30px, 9.3vw, 212px);
   letter-spacing: 8.48px;
   text-transform: uppercase;
   @media screen and (max-width: 1810px) {
@@ -125,7 +126,8 @@
 .selected-work__description--title {
   color: $black;
   font-family: Gilroy-Bold;
-  @include text-properties(40px, 400, 44px);
+  @include text-properties(400, 44px);
+  font-size: clamp(35px, 10.9vw, 40px);
   text-transform: uppercase;
   @media screen and (max-width: 991px) {
     line-height: normal;
