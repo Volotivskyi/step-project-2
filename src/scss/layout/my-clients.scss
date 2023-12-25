@@ -26,17 +26,11 @@
   }
 }
 
-.my-clients__title-div {
-  @include padding(0, 70px, 0, 70px);
 
-  @media screen and (max-width: 1810px) {
-    padding: 0;
-  }
-}
 
 .my-clients__main-title {
   color: $bright-black;
-  font-family: Gilroy-Regular;
+  font-family: Gilroy;
   @include text-properties(212px, 300, normal);
   letter-spacing: 8.48px;
   text-transform: uppercase;
@@ -148,7 +142,7 @@
 
 .my-clients__element-logo {
   &--first {
-    width: 180px;
+    width: 150px;
     height: 35px;
   }
 

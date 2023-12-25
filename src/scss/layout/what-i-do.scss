@@ -48,7 +48,7 @@
   color: $bright-black;
   font-family: Gilroy;
 
-  @include text-properties(150px, 400, normal);
+  @include text-properties(150px, 300, normal);
   text-transform: uppercase;
   @include padding(0, 0, 0, 111px);
 
