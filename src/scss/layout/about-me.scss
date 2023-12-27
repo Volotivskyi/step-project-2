@@ -2,7 +2,6 @@
   @include padding(70px, 0, 70px, 0);
   align-items: center;
   display: flex;
-flex: 80%;
 
   @media screen and (max-width: 1870px) {
     flex-direction: column;
@@ -12,22 +11,22 @@ flex: 80%;
 
 .about-me__motto {
   color: $bright-black;
-  font-family: Gilroy;
+  font-family: Gilroy-Regular;
   @include text-properties(62px, 300, normal);
   @include padding(0, 70px, 0, 70px);
   min-width: 1295px;
   word-wrap: break-word;
   text-align: center;
   box-sizing: border-box;
-  @media screen and (max-width: 1870px) {
 
+
+  @media screen and (max-width: 1870px) {
     @include padding(0, 70px, 30px, 70px);
     min-width: 100%;
   }
   @media screen and (max-width: 991px) {
     font-size: 52px;
     @include padding(0, 30px, 30px, 30px);
-
   }
   @media screen and (max-width: 550px) {
     font-size: 30px;
@@ -42,12 +41,12 @@ flex: 80%;
 }
 .about-me__motto--bold {
   color: $bright-black;
-  font-family: Gilroy;
+  font-family: Gilroy-Bold;
   @include text-properties(62px, 800, normal);
+
 
   @media screen and (max-width: 991px) {
     font-size: 52px;
-   
     height: 248px;
   }
   @media screen and (max-width: 550px) {
@@ -67,7 +66,10 @@ flex: 80%;
   gap: 30px;
   flex-direction: column;
   align-items: flex-end;
-width: 415px;
+  width: 485px;
+  background: $bright-black;
+
+
  @media screen and (max-width: 1870px) {
   width: 100%;
   @include padding(40px, 30px, 40px, 30px);
@@ -77,11 +79,11 @@ width: 415px;
   }
 }
 
-.about-me__container{
-  background: $bright-black;
- width: 100%;
+// .about-me__container{
+//   background: $bright-black;
+//   width: 100%;
 
-}
+// }
 .about-me__text {
   color: $white;
 display: flex;
@@ -89,6 +91,8 @@ display: flex;
   font-family: Gilroy-Medium;
   @include text-properties(32px, 400, 32px);
   text-transform: uppercase;
+
+
   @media screen and (max-width: 1870px) {
 font-size: 28px;
   }
