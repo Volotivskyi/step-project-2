@@ -4,10 +4,12 @@
   border: none;
   border-radius: 50px;
   cursor: pointer;
+
   @include padding(15px, 30px, 15px, 30px);
   &--white {
     font-family: Gilroy-Medium;
     background: $white;
+    color: $bright-black;
   }
 
   &--black {
@@ -16,17 +18,19 @@
     padding: 10px 30px;
     width: fit-content;
     background: $bright-black;
+    color: $white;
   }
 
   &--bottom {
     font-family: Gilroy-Medium;
     @include padding(15px, 60px, 15px, 60px);
     background: $white;
+    color: $bright-black;
     @media screen and (max-width: 475px) {
       width: 100%;
       display: flex;
       justify-content: center;
-              }
+    }
   }
 
   &--long {
@@ -34,6 +38,7 @@
     padding: 10px 30px;
     background: $bright-black;
     width: fit-content;
+    color: $white;
     @media screen and (max-width: 830px) {
       width: 100%;
       justify-content: center;

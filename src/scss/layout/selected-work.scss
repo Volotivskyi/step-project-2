@@ -15,13 +15,6 @@
 }
 
 .selected-work__title {
-  color: $bright-black;
-  text-align: center;
-  font-family: Gilroy-Light;
-  @include text-properties(300, normal);
-  font-size: clamp(30px, 9.3vw, 212px);
-  letter-spacing: 8.48px;
-  text-transform: uppercase;
   @media screen and (max-width: 1810px) {
     font-size: 150px;
     letter-spacing: 6px;

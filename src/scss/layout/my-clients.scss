@@ -27,14 +27,6 @@
 }
 
 .my-clients__main-title {
-  color: $bright-black;
-  font-family: Gilroy-Light;
-  @include text-properties(300, normal);
-  font-size: clamp(50px, 15.6vw, 212px);
-  letter-spacing: 8.48px;
-  text-transform: uppercase;
-  text-align: center;
-
   @media screen and (max-width: 1320px) {
     font-size: 150px;
   }

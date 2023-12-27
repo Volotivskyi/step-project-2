@@ -12,12 +12,6 @@
   }
 }
 .our-team__title {
-  color: $bright-black;
-  font-family: Gilroy-Light;
-  @include text-properties(300, normal);
-  font-size: clamp(50px, 15.6vw, 212px);
-  letter-spacing: 8.48px;
-  text-transform: uppercase;
   display: flex;
   @include padding(0, 70px, 0, 70px);
   justify-content: center;
