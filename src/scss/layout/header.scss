@@ -1,14 +1,14 @@
 .header__content {
   display: flex;
-  @include padding(40px, 70px, 40px, 70px);
+  @include padding(40px, 30px, 40px, 30px);
   flex-direction: column;
   align-items: center;
   gap: 30px;
 
-  @media screen and (max-width: 1300px) {
+  @media screen and (max-width: 1200px) {
     @include padding(40px, 30px, 40px, 30px);
   }
-  @media screen and (max-width: 570px) {
+  @media screen and (max-width: 767px) {
     padding-top: 20px;
   }
 }
@@ -19,7 +19,7 @@
   justify-content: space-between;
   align-items: center;
   align-self: stretch;
-  @media screen and (max-width: 570px) {
+  @media screen and (max-width: 767px) {
     padding-bottom: 0;
   }
 }
@@ -38,7 +38,7 @@
   font-size: 35px;
   letter-spacing: -0.7px;
 
-  @media screen and (max-width: 570px) {
+  @media screen and (max-width: 767px) {
     display: none;
   }
 }
@@ -67,20 +67,6 @@
   @include text-properties(400, normal);
   font-size: clamp(30px, 9.3vw, 150px);
   text-transform: uppercase;
-
-  // @media screen and (max-width: 1300px) {
-  //   font-size: 120px;
-  // }
-
-  // @media screen and (max-width: 1050px) {
-  //   font-size: 57px;
-  // }
-  // @media screen and (max-width: 475px) {
-  //   font-size: 50px;
-  // }
-  // @media screen and (max-width: 400px) {
-  //   font-size: 30px;
-  // }
 }
 
 .header__title--company {
@@ -97,16 +83,16 @@
     top: 100px;
     right: 50%;
     display: block;
-    @media screen and (max-width: 1300px) {
+    @media screen and (max-width: 1200px) {
       top: 100px;
       right: 50%;
     }
 
-    @media screen and (max-width: 950px) {
+    @media screen and (max-width: 767px) {
       top: 80px;
       right: 50%;
     }
-    @media screen and (max-width: 475px) {
+    @media screen and (max-width: 425px) {
       top: 65px;
       right: 50%;
     }
@@ -121,27 +107,27 @@
   height: auto;
   @include padding(70px, 0, 0, 0);
   object-fit: cover;
-  @media screen and (max-width: 1300px) {
+  @media screen and (max-width: 1200px) {
     display: none;
   }
 }
 .hero__img2 {
   display: none;
-  @media screen and (max-width: 1300px) {
+  @media screen and (max-width: 1200px) {
     display: block;
     width: 100%;
     height: 956px;
     @include padding(70px, 0, 0, 0);
     object-fit: cover;
   }
-  @media screen and (max-width: 570px) {
+  @media screen and (max-width: 425px) {
     display: none;
   }
 }
 
 .hero__img3 {
   display: none;
-  @media screen and (max-width: 570px) {
+  @media screen and (max-width: 425px) {
     padding-top: 50px;
     display: block;
     width: 100%;
