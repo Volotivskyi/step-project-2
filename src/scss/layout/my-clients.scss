@@ -26,12 +26,11 @@
   }
 }
 
-
-
 .my-clients__main-title {
   color: $bright-black;
   font-family: Gilroy;
-  @include text-properties(212px, 300, normal);
+  @include text-properties(300, normal);
+  font-size: clamp(50px, 15.6vw, 212px);
   letter-spacing: 8.48px;
   text-transform: uppercase;
   text-align: center;
@@ -175,7 +174,8 @@
 .my-clients__title {
   color: #333;
   font-family: Gilroy;
-  @include text-properties(40px, 800, 44px);
+  @include text-properties(800, 44px);
+  font-size: 40px;
   width: 500px;
   @media screen and (max-width: 1810px) {
     width: 100%;
@@ -185,7 +185,8 @@
 .my-clients__text {
   color: $black;
   font-family: Inter;
-  @include text-properties(20px, 400, 30px);
+  @include text-properties(400, 30px);
+  font-size: 20px;
 }
 
 .my-clients__person-content {
@@ -209,11 +210,13 @@
 .my-clients__person-name {
   color: $black;
   font-family: Inter;
-  @include text-properties(20px, 600, 20px);
+  @include text-properties(600, 20px);
+  font-size: 20px;
 }
 
 .my-clients__person-job {
   color: $black;
   font-family: Inter;
-  @include text-properties(20px, 400, 20px);
+  @include text-properties(400, 20px);
+  font-size: 20px;
 }

@@ -11,90 +11,95 @@
 
 .about-me__motto {
   color: $bright-black;
+
   font-family: Gilroy-Regular;
-  @include text-properties(62px, 300, normal);
+
+  @include text-properties(300, normal);
+  font-size: clamp(24px, 7.5vw, 62px);
+
   @include padding(0, 70px, 0, 70px);
   min-width: 1295px;
   word-wrap: break-word;
   text-align: center;
   box-sizing: border-box;
 
-
+  
   @media screen and (max-width: 1870px) {
     @include padding(0, 70px, 30px, 70px);
     min-width: 100%;
   }
   @media screen and (max-width: 991px) {
-    font-size: 52px;
+    // font-size: 52px;
     @include padding(0, 30px, 30px, 30px);
   }
   @media screen and (max-width: 550px) {
-    font-size: 30px;
+    // font-size: 30px;
     max-height: 179px;
     @include padding(0, 20px, 30px, 20px);
-
   }
   @media screen and (max-width: 400px) {
-    font-size: 24px;
+    // font-size: 24px;
     max-height: 179px;
   }
 }
 .about-me__motto--bold {
   color: $bright-black;
-  font-family: Gilroy-Bold;
-  @include text-properties(62px, 800, normal);
+  font-family: Gilroy;
+  @include text-properties(800, normal);
+  font-size: clamp(24px, 7.5vw, 62px);
 
+  // @media screen and (max-width: 991px) {
+  //   // font-size: 52px;
 
-  @media screen and (max-width: 991px) {
-    font-size: 52px;
-    height: 248px;
-  }
-  @media screen and (max-width: 550px) {
-    font-size: 30px;
-    max-height: 179px;
-
-  }
-  @media screen and (max-width: 400px) {
-    font-size: 24px;
-    max-height: 179px;
-  }
+  //   height: 248px;
+  // }
+  // @media screen and (max-width: 550px) {
+  //   // font-size: 30px;
+  //   max-height: 179px;
+  // }
+  // @media screen and (max-width: 400px) {
+  //   // font-size: 24px;
+  //   max-height: 179px;
+  // }
 }
 .about-me__content {
   box-sizing: border-box;
   display: flex;
   @include padding(60px, 0, 60px, 0);
+
   gap: 30px;
   flex-direction: column;
   align-items: flex-end;
   width: 485px;
-  background: $bright-black;
+  @media screen and (max-width: 1870px) {
+    width: 100%;
+    @include padding(40px, 30px, 40px, 30px);
+  }
 
-
- @media screen and (max-width: 1870px) {
-  width: 100%;
-  @include padding(40px, 30px, 40px, 30px);
-}
   @media screen and (max-width: 768px) {
     width: 100%;
   }
 }
+
 
 // .about-me__container{
 //   background: $bright-black;
 //   width: 100%;
 
 // }
+
 .about-me__text {
   color: $white;
-display: flex;
+  display: flex;
   text-align: right;
   font-family: Gilroy-Medium;
-  @include text-properties(32px, 400, 32px);
+  @include text-properties(400, normal);
+  font-size: clamp(28px, 8.7vw, 32px);
   text-transform: uppercase;
 
 
   @media screen and (max-width: 1870px) {
-font-size: 28px;
+    font-size: 28px;
   }
 }
 .about-me__icons {

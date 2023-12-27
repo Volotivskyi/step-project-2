@@ -48,7 +48,8 @@
   color: $bright-black;
   font-family: Gilroy-Regular;
 
-  @include text-properties(150px, 300, normal);
+  @include text-properties(300, normal);
+  font-size: clamp(50px, 15.6vw, 150px);
   text-transform: uppercase;
   @include padding(0, 0, 0, 111px);
 
@@ -58,11 +59,11 @@
   }
 
   @media screen and (max-width: 850px) {
-    font-size: 80px;
+    // font-size: 80px;
   }
 
   @media screen and (max-width: 450px) {
-    font-size: 50px;
+    // font-size: 50px;
   }
 }
 .what-i-do__text-block {
@@ -89,17 +90,18 @@
 .what-i-do__design-name {
   color: $black;
   font-family: Gilroy-SemiBold;
-  @include text-properties(44px, 400, 48px);
+  @include text-properties(400, 48px);
+  font-size: clamp(30px, 9.3vw, 44px);
   text-transform: uppercase;
   @include padding(0, 0, 0, 60px);
 
   @media screen and (max-width: 850px) {
-    font-size: 35px;
+    // font-size: 35px;
     @include padding(0, 0, 0, 50px);
   }
 
   @media screen and (max-width: 550px) {
-    font-size: 30px;
+    // font-size: 30px;
     @include padding(0, 0, 0, 40px);
   }
 
@@ -167,5 +169,6 @@
 .what-i-do__design-text {
   color: $black;
   font-family: Inter;
-  @include text-properties(20px, 400, 28px);
+  @include text-properties(400, 28px);
+  font-size: clamp(20px, 6.2vw, 28px);
 }
