@@ -11,17 +11,14 @@
 
 .about-me__motto {
   color: $bright-black;
-
-  font-family: Gilroy-Regular;
-
+  font-family: Gilroy-Light;
   @include text-properties(300, normal);
   font-size: clamp(24px, 7.5vw, 62px);
-
   @include padding(0, 70px, 0, 70px);
   min-width: 1295px;
   word-wrap: break-word;
-  text-align: center;
   box-sizing: border-box;
+  text-align: left;
 
   
   @media screen and (max-width: 1870px) {
@@ -44,33 +41,23 @@
 }
 .about-me__motto--bold {
   color: $bright-black;
-  font-family: Gilroy;
+  font-family: Gilroy-Bold;
   @include text-properties(800, normal);
   font-size: clamp(24px, 7.5vw, 62px);
 
-  // @media screen and (max-width: 991px) {
-  //   // font-size: 52px;
-
-  //   height: 248px;
-  // }
-  // @media screen and (max-width: 550px) {
-  //   // font-size: 30px;
-  //   max-height: 179px;
-  // }
-  // @media screen and (max-width: 400px) {
-  //   // font-size: 24px;
-  //   max-height: 179px;
-  // }
 }
 .about-me__content {
   box-sizing: border-box;
   display: flex;
-  @include padding(60px, 0, 60px, 0);
-
+  @include padding(60px, 70px, 60px, 0);
+  background: $bright-black;
   gap: 30px;
   flex-direction: column;
   align-items: flex-end;
   width: 485px;
+
+
+
   @media screen and (max-width: 1870px) {
     width: 100%;
     @include padding(40px, 30px, 40px, 30px);
@@ -82,11 +69,6 @@
 }
 
 
-// .about-me__container{
-//   background: $bright-black;
-//   width: 100%;
-
-// }
 
 .about-me__text {
   color: $white;

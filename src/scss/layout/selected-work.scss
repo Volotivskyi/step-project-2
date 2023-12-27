@@ -17,7 +17,7 @@
 .selected-work__title {
   color: $bright-black;
   text-align: center;
-  font-family: Gilroy-Regular;
+  font-family: Gilroy-Light;
   @include text-properties(300, normal);
   font-size: clamp(30px, 9.3vw, 212px);
   letter-spacing: 8.48px;

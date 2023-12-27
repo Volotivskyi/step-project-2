@@ -13,7 +13,7 @@
 }
 .our-team__title {
   color: $bright-black;
-  font-family: Gilroy-Regular;
+  font-family: Gilroy-Light;
   @include text-properties(300, normal);
   font-size: clamp(50px, 15.6vw, 212px);
   letter-spacing: 8.48px;
@@ -96,7 +96,7 @@
 
 .team__name {
   color: $grey;
-  font-family: Gilroy;
+  font-family: Gilroy-ExtraBold;
   @include text-properties(800, normal);
   font-size: 30px;
   text-transform: uppercase;

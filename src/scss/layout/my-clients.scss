@@ -28,7 +28,7 @@
 
 .my-clients__main-title {
   color: $bright-black;
-  font-family: Gilroy;
+  font-family: Gilroy-Light;
   @include text-properties(300, normal);
   font-size: clamp(50px, 15.6vw, 212px);
   letter-spacing: 8.48px;
@@ -173,7 +173,7 @@
 
 .my-clients__title {
   color: #333;
-  font-family: Gilroy;
+  font-family: Gilroy-ExtraBold;
   @include text-properties(800, 44px);
   font-size: 40px;
   width: 500px;
