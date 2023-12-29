@@ -3,7 +3,7 @@
   @include padding(50px, 0, 100px, 0);
   border-top: 1px solid $bright-black;
 
-  @media screen and (max-width: 1510px) {
+  @media screen and (max-width: 1199px) {
     @include padding(30px, 0, 50px, 0);
   }
 }
@@ -14,15 +14,17 @@
   grid-template-rows: 1fr;
   gap: 40px;
 
-  @media screen and (max-width: 1510px) {
+  @media screen and (max-width: 1199px) {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
+  }
+  @media screen and (max-width: 767px) {
     gap: 30px;
   }
 }
 
 .contact__title-div {
-  @media screen and (max-width: 1510px) {
+  @media screen and (max-width: 1199px) {
     display: flex;
     justify-content: center;
   }
@@ -35,10 +37,11 @@
   font-size: clamp(50px, 15.6vw, 155px);
   text-transform: uppercase;
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 1199px) {
     font-size: 80px;
+    text-align: center;
   }
-  @media screen and (max-width: 475px) {
+  @media screen and (max-width: 425px) {
     font-size: 50px;
   }
 }
@@ -48,7 +51,7 @@
   flex-direction: column;
   gap: 30px;
 
-  @media screen and (max-width: 1510px) {
+  @media screen and (max-width: 1199px) {
     text-align: center;
     align-items: center;
   }
@@ -61,7 +64,7 @@
   font-size: clamp(50px, 15.6vw, 64px);
   text-transform: uppercase;
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 767px) {
     font-size: 50px;
   }
 }
@@ -71,8 +74,8 @@
   font-family: Gilroy-Medium;
   @include text-properties(400, normal);
   font-size: 34px;
-  @media screen and (max-width: 800px) {
-    font-size: 34px;
+  @media screen and (max-width: 767px) {
+    font-size: 30px;
   }
 }
 
@@ -83,4 +86,11 @@
   font-size: 18px;
   text-transform: capitalize;
   text-align: start;
+}
+
+.contact__button-image{
+  width: 21.412px;
+  height: 13.333px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }

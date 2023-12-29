@@ -1,13 +1,14 @@
 .our-team {
   display: flex;
-  @include padding(50px, 0, 50px, 0);
+  padding-top: 50px;
+  padding-bottom: 50px;
   flex-direction: column;
   gap: 50px;
-  @media screen and (max-width: 1810px) {
+  @media screen and (max-width: 1199px) {
     @include padding(30px, 30px, 50px, 30px);
     gap: 30px;
   }
-  @media screen and (max-width: 950px) {
+  @media screen and (max-width: 767px) {
     @include padding(30px, 20px, 50px, 20px);
   }
 }
@@ -16,19 +17,10 @@
   @include padding(0, 70px, 0, 70px);
   justify-content: center;
   align-items: center;
-  @media screen and (max-width: 1810px) {
+  white-space: nowrap;
+  @media screen and (max-width: 1199px) {
     letter-spacing: normal;
     font-size: 150px;
-  }
-  @media screen and (max-width: 950px) {
-    font-size: 80px;
-  }
-  @media screen and (max-width: 475px) {
-    font-size: 50px;
-  }
-  @media screen and (max-width: 420px) {
-    font-size: 50px;
-    white-space: nowrap;
   }
 }
 
@@ -38,11 +30,11 @@
   grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 40px;
   grid-row-gap: 30px;
-  @media screen and (max-width: 1810px) {
+  @media screen and (max-width: 1199px) {
     grid-template-rows: repeat(4, 1fr);
     grid-template-columns: repeat(2, 1fr);
   }
-  @media screen and (max-width: 991px) {
+  @media screen and (max-width: 767px) {
     grid-template-rows: repeat(6, 1fr);
     grid-template-columns: 1fr;
   }
@@ -54,29 +46,30 @@
   flex-direction: column;
   gap: 15px;
 
-  @media screen and (max-width: 950px) {
+
+  @media screen and (max-width: 767px) {
     @include padding(20px, 0, 20px, 0);
   }
 }
 
 .team__link {
   display: flex;
-  width: 415px;
+width: 100%;
   gap: 15px;
   flex-direction: column;
-  @media screen and (max-width: 1810px) {
+  @media screen and (max-width: 1199px) {
     justify-self: center;
     align-self: center;
-    max-width: 100%;
+    width: 100%;
   }
-  @media screen and (max-width: 950px) {
+  @media screen and (max-width: 767px) {
     width: 100%;
   }
 }
 
 .team__box--info {
   grid-column: span 2;
-  @media screen and (max-width: 991px) {
+  @media screen and (max-width: 767px) {
     grid-column: span 1;
   }
 }
@@ -94,8 +87,9 @@
   @include text-properties(800, normal);
   font-size: 30px;
   text-transform: uppercase;
-  @media screen and (max-width: 950px) {
+  @media screen and (max-width: 767px) {
     text-align: center;
+ 
   }
 }
 .team__profession {
@@ -103,7 +97,7 @@
   font-family: Gilroy-Medium;
   @include text-properties(400, normal);
   font-size: 20px;
-  @media screen and (max-width: 950px) {
+  @media screen and (max-width: 767px) {
     text-align: center;
   }
 }
@@ -112,9 +106,6 @@
   height: 507px;
   object-fit: cover;
   filter: grayscale(100%);
-  @media screen and (max-width: 477px) {
-    max-width: 100%;
-  }
 }
 
 .team__icons {
@@ -122,7 +113,8 @@
   justify-content: flex-end;
   align-items: center;
   gap: 10px;
-  @media screen and (max-width: 950px) {
+
+  @media screen and (max-width: 767px) {
     justify-content: center;
   }
 }
@@ -133,7 +125,7 @@
   flex-direction: column;
   justify-content: center;
 
-  @media screen and (max-width: 991px) {
+  @media screen and (max-width: 767px) {
     padding: 0;
     height: fit-content;
   }
@@ -146,7 +138,7 @@
   align-items: flex-start;
   gap: 15px;
   align-self: stretch;
-  @media screen and (max-width: 950px) {
+  @media screen and (max-width: 767px) {
     align-items: center;
   }
 }
@@ -164,12 +156,12 @@
   @include text-properties(400, normal);
   font-size: clamp(40px, 12.5vw, 64px);
   text-transform: uppercase;
-  @media screen and (max-width: 950px) {
+  @media screen and (max-width: 767px) {
     text-align: center;
     width: 100%;
     font-size: 50px;
   }
-  @media screen and (max-width: 477px) {
+  @media screen and (max-width: 425px) {
     font-size: 40px;
   }
 }

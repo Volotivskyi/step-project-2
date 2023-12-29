@@ -6,16 +6,19 @@
 .logos__items {
   display: flex;
   flex-wrap: wrap;
-  @include padding(70px, 0, 70px, 0);
+  padding-top: 70px;
+  padding-bottom: 70px;
   justify-content: center;
   align-items: center;
   gap: 40px;
   @media screen and (max-width: 1199px) {
-    @include padding(40px, 30px, 40px, 30px);
+    padding-top: 40px;
+    padding-bottom: 40px;
     gap: 20px;
   }
   @media screen and (max-width: 767px) {
-    @include padding(30px, 20px, 30px, 20px);
+    padding-top: 30px;
+    padding-bottom: 30px;
     gap: 20px;
   }
   .logos__item {
@@ -29,4 +32,3 @@
     background: $white;
   }
 }
-
