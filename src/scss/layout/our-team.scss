@@ -86,11 +86,14 @@ width: 100%;
   color: $grey;
   font-family: Gilroy-ExtraBold;
   @include text-properties(800, normal);
-  font-size: 30px;
+  font-size: 25px;
+  // font-size: 30px;
   text-transform: uppercase;
+  @media screen and (max-width: 1199px) {
+    font-size: 30px;
+  }
   @media screen and (max-width: 767px) {
     text-align: center;
- 
   }
 }
 .team__profession {
