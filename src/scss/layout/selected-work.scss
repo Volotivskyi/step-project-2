@@ -12,13 +12,12 @@
     gap: 30px;
   }
   .selected-work__title {
-    white-space: nowrap;
     @media screen and (max-width: 1199px) {
       letter-spacing: 6px;
+      white-space: wrap;
     }
     @media screen and (max-width: 767px) {
       letter-spacing: 3.2px;
-      white-space: wrap;
     }
   }
   .selected-work__content {
@@ -29,9 +28,9 @@
     grid-row-gap: 70px;
 
     @media screen and (max-width: 1199px) {
-      grid-template-rows: repeat(2, 1fr) repeat(1, 209px) repeat(2, 1fr) repeat(
+      grid-template-rows: repeat(2, 1fr) repeat(1, 249px) repeat(2, 1fr) repeat(
           1,
-          209px
+          249px
         );
       grid-template-columns: 1fr;
       grid-row-gap: 30px;
@@ -55,28 +54,18 @@
       }
     }
     @media screen and (max-width: 767px) {
-      grid-template-rows: repeat(2, 417px) repeat(1, 198px) repeat(2, 417px) repeat(
+      grid-template-rows: repeat(2, 1fr) repeat(1, 208px) repeat(2, 1fr) repeat(
           1,
-          212px
+          208px
         );
-      grid-template-columns: 438px;
       grid-row-gap: 20px;
     }
-    @media screen and (max-width: 425px) {
-      grid-template-rows: repeat(2, 400px) repeat(1, 198px) repeat(2, 400px) repeat(
-          1,
-          212px
-        );
-      grid-template-columns: 1fr;
-      grid-row-gap: 20px;
-    }
+
+
     .selected-work__photo {
       aspect-ratio: 1/1;
       height: 100%;
 
-      @media screen and (max-width: 767px) {
-        aspect-ratio: auto;
-      }
     }
 
     .selected-work__photo--size {

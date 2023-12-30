@@ -21,6 +21,7 @@
   @media screen and (max-width: 1199px) {
     letter-spacing: normal;
     font-size: 150px;
+    white-space: wrap;
   }
 }
 
@@ -31,7 +32,7 @@
   grid-column-gap: 40px;
   grid-row-gap: 30px;
   @media screen and (max-width: 1199px) {
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr) 277px;
     grid-template-columns: repeat(2, 1fr);
   }
   @media screen and (max-width: 767px) {

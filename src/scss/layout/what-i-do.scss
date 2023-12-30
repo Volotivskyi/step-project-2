@@ -48,8 +48,7 @@
   color: $bright-black;
   font-family: Gilroy-Light;
   @include text-properties(300, normal);
-  font-size: clamp(80px, 25vw, 150px);
-
+  font-size: clamp(55px, 17.1vw, 150px);
   text-transform: uppercase;
   padding-left: 111px;
 
@@ -57,14 +56,6 @@
     text-align: center;
     padding: 0;
   }
-
-  // @media screen and (max-width: 850px) {
-  // font-size: 80px;
-  // }
-
-  // @media screen and (max-width: 450px) {
-  // font-size: 50px;
-  // }
 }
 .what-i-do__text-block {
   display: flex;
