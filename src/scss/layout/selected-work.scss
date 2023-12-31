@@ -12,12 +12,15 @@
     gap: 30px;
   }
   .selected-work__title {
+    text-wrap: nowrap;
+    font-size: clamp(80px, 10vw, 212px);
     @media screen and (max-width: 1199px) {
       letter-spacing: 6px;
       white-space: wrap;
     }
     @media screen and (max-width: 767px) {
       letter-spacing: 3.2px;
+      font-size: 80px;
     }
   }
   .selected-work__content {
@@ -61,11 +64,9 @@
       grid-row-gap: 20px;
     }
 
-
     .selected-work__photo {
       aspect-ratio: 1/1;
       height: 100%;
-
     }
 
     .selected-work__photo--size {
