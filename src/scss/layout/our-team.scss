@@ -47,7 +47,6 @@
   flex-direction: column;
   gap: 15px;
 
-
   @media screen and (max-width: 767px) {
     @include padding(20px, 0, 20px, 0);
   }
@@ -87,8 +86,8 @@ width: 100%;
   font-family: Gilroy-ExtraBold;
   @include text-properties(800, normal);
   font-size: 25px;
-  // font-size: 30px;
   text-transform: uppercase;
+
   @media screen and (max-width: 1199px) {
     font-size: 30px;
   }
@@ -101,6 +100,7 @@ width: 100%;
   font-family: Gilroy-Medium;
   @include text-properties(400, normal);
   font-size: 20px;
+
   @media screen and (max-width: 767px) {
     text-align: center;
   }
@@ -142,6 +142,7 @@ width: 100%;
   align-items: flex-start;
   gap: 15px;
   align-self: stretch;
+
   @media screen and (max-width: 767px) {
     align-items: center;
   }
@@ -160,6 +161,7 @@ width: 100%;
   @include text-properties(400, normal);
   font-size: clamp(40px, 12.5vw, 64px);
   text-transform: uppercase;
+  
   @media screen and (max-width: 767px) {
     text-align: center;
     width: 100%;

@@ -151,9 +151,6 @@ display: flex;
   @include text-properties(800, 44px);
   font-size: 40px;
   width: 100%;
-  @media screen and (max-width: 1199px) {
-    width: 100%;
-  }
 }
 
 .my-clients__text {

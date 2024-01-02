@@ -44,6 +44,7 @@
     @include padding(20px, 0, 20px, 0);
   }
 }
+
 .what-i-do__title {
   color: $bright-black;
   font-family: Gilroy-Light;
@@ -57,6 +58,7 @@
     padding: 0;
   }
 }
+
 .what-i-do__text-block {
   display: flex;
   flex-direction: column;
@@ -72,12 +74,14 @@
     padding: 0;
   }
 }
+
 .what-i-do__design-type {
   display: flex;
   flex-direction: column;
   gap: 10px;
   position: relative;
 }
+
 .what-i-do__design-name {
   color: $black;
   font-family: Gilroy-SemiBold;
@@ -87,12 +91,10 @@
   @include padding(0, 0, 0, 60px);
 
   @media screen and (max-width: 767px) {
-    // font-size: 35px;
     @include padding(0, 0, 0, 50px);
   }
 
   @media screen and (max-width: 425px) {
-    // font-size: 30px;
     @include padding(0, 0, 0, 40px);
   }
 
@@ -162,4 +164,9 @@
   font-family: Inter;
   @include text-properties(400, 28px);
   font-size: clamp(20px, 6.2vw, 28px);
+  padding-bottom: 30px;
+}
+
+.what-i-do__design-text--bottom{
+  padding-bottom: 0;
 }
