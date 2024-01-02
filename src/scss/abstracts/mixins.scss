@@ -1,5 +1,4 @@
-@mixin text-properties($font-size, $font-weight, $font-height) {
-  font-size: $font-size;
+@mixin text-properties($font-weight, $font-height) {
   font-weight: $font-weight;
   line-height: $font-height;
 }

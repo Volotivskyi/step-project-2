@@ -3,16 +3,12 @@
   border-top: 1px solid $bright-black;
   @include padding(50px, 0, 50px, 0);
 
-  @media screen and (max-width: 1810px) {
-    @include padding(30px, 30px, 30px, 30px);
+  @media screen and (max-width: 1199px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
-
-  @media screen and (max-width: 1200px) {
-    @include padding(50px, 0, 0, 0);
-  }
-
-  @media screen and (max-width: 900px) {
-    @include padding(50px, 0, 0, 0);
+  @media screen and (max-width: 767px) {
+    padding-bottom: 0;
   }
 }
 
@@ -21,44 +17,16 @@
   flex-direction: column;
   gap: 50px;
 
-  @media screen and (max-width: 1810px) {
+  @media screen and (max-width: 1199px) {
     gap: 30px;
   }
 }
 
-.my-clients__title-div {
-  @include padding(0, 70px, 0, 70px);
-
-  @media screen and (max-width: 1810px) {
-    padding: 0;
-  }
-}
-
-.my-clients__main-title {
-  color: $bright-black;
-  font-family: Gilroy-Regular;
-  @include text-properties(212px, 300, normal);
-  letter-spacing: 8.48px;
-  text-transform: uppercase;
-  text-align: center;
-
-  @media screen and (max-width: 1320px) {
-    font-size: 150px;
-  }
-
-  @media screen and (max-width: 960px) {
-    font-size: 80px;
-  }
-
-  @media screen and (max-width: 560px) {
-    font-size: 50px;
-  }
-}
 
 .my-clients__content {
   @include padding(0, 0, 80px, 0);
 
-  @media screen and (max-width: 1810px) {
+  @media screen and (max-width: 1199px) {
     padding: 0;
   }
 }
@@ -68,7 +36,7 @@
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
 
-  @media screen and (max-width: 1810px) {
+  @media screen and (max-width: 1199px) {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 1fr);
   }
@@ -76,15 +44,13 @@
 
 .my-clients__element {
   @include padding(30px, 30px, 30px, 30px);
-  height: 507px;
+display: flex;
 
-  @media screen and (max-width: 1810px) {
-    @include padding(40px, 0, 40px, 0);
-    height: auto;
-    border-bottom: 1px solid black;
-  }
-
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 1199px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    height: fit-content;
+    border-bottom: 1px solid $black;
   }
 }
 
@@ -92,9 +58,9 @@
 .my-clients__element:nth-child(2),
 .my-clients__element:nth-child(4),
 .my-clients__element:nth-child(5) {
-  border-right: 1px solid black;
+  border-right: 1px solid $black;
 
-  @media screen and (max-width: 1810px) {
+  @media screen and (max-width: 1199px) {
     border-right: none;
   }
 }
@@ -102,9 +68,9 @@
 .my-clients__element:nth-child(1),
 .my-clients__element:nth-child(2),
 .my-clients__element:nth-child(3) {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid $black;
 
-  @media screen and (max-width: 1810px) {
+  @media screen and (max-width: 1199px) {
     border-right: none;
   }
 }
@@ -113,7 +79,7 @@
 .my-clients__element:nth-child(4) {
   @include padding(30px, 50px, 30px, 30px);
 
-  @media screen and (max-width: 1810px) {
+  @media screen and (max-width: 1199px) {
     @include padding(40px, 0, 40px, 0);
   }
 }
@@ -122,7 +88,7 @@
 .my-clients__element:nth-child(5) {
   @include padding(30px, 50px, 30px, 50px);
 
-  @media screen and (max-width: 1810px) {
+  @media screen and (max-width: 1199px) {
     @include padding(40px, 0, 40px, 0);
   }
 }
@@ -131,7 +97,7 @@
 .my-clients__element:nth-child(6) {
   @include padding(30px, 30px, 30px, 50px);
 
-  @media screen and (max-width: 1810px) {
+  @media screen and (max-width: 1199px) {
     @include padding(40px, 0, 40px, 0);
   }
 }
@@ -144,17 +110,18 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
+  justify-content: space-between;
 }
 
 .my-clients__element-logo {
   &--first {
-    width: 180px;
+    width: 150px;
     height: 35px;
   }
 
   &--second {
     width: 84px;
-    height: 40px;
+    height: 35px;
   }
 
   &--third {
@@ -164,10 +131,10 @@
 
   &--forth {
     width: 152px;
-    height: 34px;
+    height: 35px;
   }
 
-  &--fifth {
+  &--sixth {
     width: 180px;
     height: 35px;
   }
@@ -180,18 +147,17 @@
 
 .my-clients__title {
   color: #333;
-  font-family: Gilroy;
-  @include text-properties(40px, 800, 44px);
-  width: 500px;
-  @media screen and (max-width: 1810px) {
-    width: 100%;
-  }
+  font-family: Gilroy-ExtraBold;
+  @include text-properties(800, 44px);
+  font-size: 40px;
+  width: 100%;
 }
 
 .my-clients__text {
   color: $black;
   font-family: Inter;
-  @include text-properties(20px, 400, 30px);
+  @include text-properties(400, 30px);
+  font-size: 20px;
 }
 
 .my-clients__person-content {
@@ -215,11 +181,13 @@
 .my-clients__person-name {
   color: $black;
   font-family: Inter;
-  @include text-properties(20px, 600, 20px);
+  @include text-properties(600, 20px);
+  font-size: 20px;
 }
 
 .my-clients__person-job {
   color: $black;
   font-family: Inter;
-  @include text-properties(20px, 400, 20px);
+  @include text-properties(400, 20px);
+  font-size: 20px;
 }

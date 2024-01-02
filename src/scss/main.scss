@@ -7,7 +7,6 @@
 
 //abstracts
 @import "./abstracts/mixins.scss";
-@import "./abstracts/placeholders.scss";
 @import "./abstracts/variables.scss";
 
 //layout
@@ -24,3 +23,4 @@
 
 //components
 @import "./components/page-button.scss";
+@import "./components/page-title.scss";
