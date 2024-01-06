@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "gulp dev",
+    "deploy": "gulp deployf",
     "build": "gulp build"
   },
   "author": "dan.it education",
@@ -19,10 +20,13 @@
     "gulp-clean-css": "^4.3.0",
     "gulp-concat": "^2.6.1",
     "gulp-csso": "^4.0.1",
+    "gulp-gh-pages": "^0.5.4",
     "gulp-imagemin": "^8.0.0",
     "gulp-sass": "^5.1.0",
     "sass": "^1.69.4"
   },
-  "browserslist": ["last 3 version and not dead"],
+  "browserslist": [
+    "last 3 version and not dead"
+  ],
   "type": "module"
 }

@@ -8,6 +8,7 @@ import clean from "gulp-clean";
 import * as dartSass from "sass";
 import gulpSass from "gulp-sass";
 const sass = gulpSass(dartSass);
+const deploy = "gulp-gh-pages";
 
 import bsc from "browser-sync";
 const browserSync = bsc.create();
@@ -63,14 +64,19 @@ const browserSyncTaskHandler = () => {
 	);
 };
 
+
 export const cleaning = cleanDistTaskHandler;
 export const html = htmlTaskHandler;
 export const css = cssTaskHandler;
 export const font = fontTaskHandler;
 export const images = imagesTaskHandler;
-
+export const deployf = () => {
+	return src("./dist/**/*")
+	  .pipe(deploy())
+	 }
 export const build = series(
 	cleanDistTaskHandler,
 	parallel(htmlTaskHandler, cssTaskHandler, fontTaskHandler, imagesTaskHandler)
 );
 export const dev = series(build, browserSyncTaskHandler);
+
